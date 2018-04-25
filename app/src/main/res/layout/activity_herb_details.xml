@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context="com.example.android.herbalapp.HerbDetails">
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView"
+            android:layout_above="@+id/button"
+            android:background="@color/background_fragment">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:padding="5dp"
+                android:id="@+id/himage"
+                android:src="@drawable/aloevera"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/himage"
+                    android:id="@+id/names"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/lightgreen"
+                        android:textColor="@color/black"
+                        android:padding="15dp"
+                        android:textStyle="bold"
+                        android:text="Names"
+                        android:textSize="18sp" />
+
+                    <RelativeLayout
+                        android:background="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:id="@+id/from"
+                            android:text="Common Name :"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"
+                           android:layout_margin="5dp"
+                            android:id="@+id/datefrom"
+                            android:text="Heart Diseases"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_below="@+id/from"
+                            android:id="@+id/to"
+                            android:text="S. Name :"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/dateuntil"
+                            android:textColor="@color/black"
+                            android:layout_alignParentRight="true"
+                            android:textSize="16sp"
+                           android:layout_margin="5dp"
+                            android:layout_below="@+id/datefrom"
+                            android:text="Cardiologist"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_below="@+id/to"
+                            android:id="@+id/mname"
+                            android:text="M. Name :"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/malname"
+                            android:textColor="@color/black"
+                            android:layout_alignParentRight="true"
+                            android:textSize="16sp"
+                            android:layout_margin="5dp"
+                            android:layout_below="@+id/dateuntil"
+                            android:text="Cardiologist"/>
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/desccontainer"
+                    android:layout_below="@+id/names"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/lightgreen"
+                        android:padding="15dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:text="Description"
+                        android:textSize="18sp" />
+
+                    <RelativeLayout
+                        android:background="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:id="@+id/desc"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/black"
+                            android:text="The officiA Plc)he registered office is FAO Sylvia Welsh Manchester Professional Services Limited, PO BOX 532, Town Hall, Manchester"
+                            />
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/usedforcontainer"
+                    android:layout_below="@+id/desccontainer"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:background="@color/lightgreen"
+                        android:textStyle="bold"
+                        android:padding="15dp"
+                        android:text="Used for"
+                        android:textSize="18sp" />
+
+                    <RelativeLayout
+                        android:background="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/usedfor"
+                            android:text="The officiA Plc)he registered office is FAO Sylvia Welsh Manchester Professional Services Limited, PO BOX 532, Town Hall, Manchester"/>
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/usedforcontainer"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:background="@color/lightgreen"
+                    android:textStyle="bold"
+                    android:padding="15dp"
+                    android:text="Price per 100gm"
+                    android:textSize="18sp" />
+
+                <RelativeLayout
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="32sp"
+                        android:textStyle="bold"
+                        android:padding="10dp"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/black"
+                        android:id="@+id/price"
+                        android:text="100"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BUY THIS HERB"
+            android:id="@+id/button"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimary"/>
+
+</RelativeLayout>
+

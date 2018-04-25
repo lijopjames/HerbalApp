@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.example.android.herbalapp.HomeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <ImageView style="@style/title"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/imagedisplay"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/imageleaf"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="40dp"
+            android:padding="19dp"
+            android:layout_below="@+id/imagedisplay">
+
+            <Button
+                android:id="@+id/mplants"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/buttonback"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/plants"
+                android:padding="5dp"
+                android:text="medicinal plants" />
+
+            <Button
+                android:id="@+id/mcure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonback"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+
+                android:padding="5dp"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/cure"
+                android:text="find a herbal cure"/>
+
+
+            <Button
+                android:id="@+id/addbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/buttonback"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/add"
+                android:padding="5dp"
+                android:text="Add a medicinal plant" />
+
+
+            <Button
+                android:id="@+id/profilebutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonback"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:padding="5dp"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/user"
+                android:text="profile"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
